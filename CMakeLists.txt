@@ -4,4 +4,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED)
 
 project(ccm)
 
-add_executable(ccm "main.cpp")
+add_executable(ccm "main.cpp" "args.cpp")
+
+target_include_directories(ccm "include")
