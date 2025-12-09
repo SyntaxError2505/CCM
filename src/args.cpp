@@ -34,7 +34,7 @@ args::args(int argc, const char* argv[]){
                     include_public.push_back(false);
                 }
                 else{
-                    std::cout << "Make Sure that every Include statement as 'PU' or 'PR' (Public/Private) infront of the path\n";
+                    std::cout << "Make Sure that every include statement has 'PU' or 'PR' (Public/Private) infront of the path\n";
                     this->error = true;
                 }
                 this->include_paths.push_back(argv[i]);
@@ -68,4 +68,8 @@ args::args(int argc, const char* argv[]){
             }
         }
     }
+}
+
+bool args::getError(){
+    return this->error;
 }

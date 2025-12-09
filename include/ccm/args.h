@@ -20,6 +20,7 @@ class args{
 
     public:
     args(int argc, const char* argv[]);
+    bool getError();
 };
 
 #endif
